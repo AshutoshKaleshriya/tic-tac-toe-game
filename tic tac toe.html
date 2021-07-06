@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about tic tac toe</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Itim', cursive;
+        }
+
+        body {
+            background-image: url("bg2.jpg");
+            background-position: norepeat;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-attachment: fixed;
+
+        }
+
+        header {
+            position: relative;
+            max-width: 400vw;
+            margin: 20px auto;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background: rgb(210, 246, 255);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: rgb(0, 0, 0);
+            height: 60px;
+            font-size: 36px;
+            line-height: 60px;
+            padding: 0 20px;
+            text-align: center;
+            box-sizing: border-box;
+            float: left;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+        }
+
+        nav {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            font-weight: 700;
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background: #069370;
+            transition: 0.5s;
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) {
+            header {
+                margin: 20px;
+            }
+        }
+
+        #marq {
+            padding: 0;
+            margin: 0;
+        }
+
+        marquee {
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+            direction: inherit;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            padding: 0;
+            margin: 0;
+        }
+
+        #about {
+            position: absolute;
+            top: 17vh;
+            left: 5vw;
+            background: rgba(166, 242, 255, 0.5);
+            right: 5vw;
+            border-radius: 10px;
+            height: auto;
+            padding: 27px;
+            margin: 8px;
+            line-height: 67px;
+        }
+
+        #about h3 {
+            font-size: 40px;
+            color: rgb(228 37 37);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 4px;
+        }
+
+        #about p {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #about h1 {
+            font-size: 53px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="ashu.jpg" alt="Ashutosh"> Ashutosh</a>
+        <div class="menu"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="pnew.html">Home</a></li>
+                <li><a href="#">Tic-Tac-Toe</a></li>
+                <li><a href="contect us.html">contect us</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+    <div id="about">
+        <h1>tic tac toe</h1>
+        <h3>about game </h3>
+        <p> Tic-tac-toe is a simple, two-player game that,
+            if played optimally by both players, will always result in a tie.
+            The game is also called noughts and crosses or Xs and Os.</p>
+        <h3>game play</h3>
+        <p> The goal of tic-tac-toe is to be the first player to get three in a row on a 3-by-3 grid
+            To start, one player draws a board, creating a grid of squares,
+
+            In a 3-by-3 grid game, the player who is playing "X" always goes first.
+            Players alternate placing Xs and Os on the board until either
+            player has three in a row, horizontally, vertically, or diagonally or until
+            all squares on the grid are filled. If a player is able to draw three Xs or three Os
+            in a row, then that player wins. If all squares are filled and
+            neither player has made a complete row of Xs or Os, then the game is a draw.
+        </p><br>
+        <h3> history of this game </h3>
+        <p>An early variation of the game was played in the Roman Empire,
+            around the 1st century B.C. It was called "terni lapilli,"
+            which means "three pebbles at a time." The game's grid markings
+            have been found chalked all over Roman ruins. Evidence of the game
+            was also found in ancient Egyptian ruins.
+
+            The first print reference to "noughts and crosses," the
+            British name for the game, appeared in 1864. The first print
+            reference to a game called "tick-tack-toe" occurred in 1884 but
+            referred to a children's game played on a slate.</p>
+
+    </div>
+
+</body>
+
+</html>

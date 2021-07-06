@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <title>FEEDBACK</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Itim', cursive;
+        }
+
+        body {
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-attachment: fixed;
+
+        }
+
+        header {
+            position: relative;
+            max-width: 400vw;
+            margin: 20px auto;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background: rgb(210, 246, 255);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: rgb(0, 0, 0);
+            height: 60px;
+            font-size: 36px;
+            line-height: 60px;
+            padding: 0 20px;
+            text-align: center;
+            box-sizing: border-box;
+            float: left;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+        }
+
+        nav {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            font-weight: 700;
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background: #069370;
+            transition: 0.5s;
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) {
+            header {
+                margin: 20px;
+            }
+        }
+
+
+        h1 {
+            font-family: castellar;
+            font-size: 40px;
+            text-align: center;
+            background-color: rgba(133, 239, 253, 0.685);
+        }
+
+        #formpage {
+            position: absolute;
+            top: 30vh;
+            left: 50px;
+            height: 50vh;
+            width: 40vw;
+
+        }
+
+        #suggest {
+            font-family: sans-serif;
+            font-style: italic;
+            min-width: 60vh;
+            min-height: 10vw;
+            height: auto;
+            width: auto;
+            background:rgba(176, 238, 247, 0.59);
+            font-size: 20px;
+        }
+
+        #right {
+            font-size: 36px;
+            font-family: sans-serif;
+            font-style: italic;
+            width: 45vw;
+            position: absolute;
+            top: 30vh;
+            left: 55vw;
+        }
+
+         label {
+            font-family: sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            color: rgba(172, 247, 75, 0.863);
+        }
+
+        input {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            border-bottom: solid 2px rgb(11, 173, 248);
+            font-style: italic;
+            background: none;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            margin: 5px;
+        }
+        #form button
+        {
+            border: brown;
+            border-radius: 50px;
+            height: 40px;
+            width: 100px;
+            font-size: 30pxpx;
+            margin: 3px 20px;
+            background-color: cornflowerblue;
+
+        }
+
+        textarea {
+            border-radius: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            font-size: 30px;
+            position: absolute;
+            top:120vh;
+            left: 35vw;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="ashu.jpg" alt="Ashutosh"> Ashutosh</a>
+        <div class="menu"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="pnew.html">Home</a></li>
+                <li><a href="tic tac toe.html">Tic-Tac-Toe</a></li>
+                <li><a href="contect us.html">contect us</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+
+    <h1>FEEDBACK FORM</h1>
+    <div id="top">
+        <div id="formpage">
+            <form id="form">
+                <label>First Name<br>
+                    <input id="first" type="text" size="25" maxlength="40" required="required"
+                        placeholder="Enter First Name"></label><br><br>
+                <label>Middle Name<br>
+                    <input id="mid" type="text" size="25" maxlength="30"
+                        placeholder="Enter Middle Name"></label><br><br>
+                <label>Last Name<br>
+                    <input id="last" type="text" size="25" maxlength="40" required="required"
+                        placeholder="Enter Last Name"></label><br><br>
+                <label>Gender<input id="ml" type="radio" name="Gender" value="Male" required="required">Male
+                    <input id="fl" type="radio" name="Gender" value="Female" required="required">Female</label>
+                <br><br><label>Suggestion<br>
+                    <textarea id="suggest" placeholder="Your Suggestion" required="required"></textarea></label>
+                <br><br>
+                <button id="add" onclick='show()'>submit</button>
+                <button id="clear" onclick='clear()'>clear </button>
+            </form>
+        </div>
+        <div id="right">
+            Your Thought Matters
+            <hr>
+            <div id="display"></div>
+        </div>
+    </div>
+
+    <footer>2021 Developed By : ashutosh kaleshriya <br> scholar no. 202120131 &reg;
+    </footer>
+    <script src="feedjava.js"></script>
+
+
+</body>
+
+</html>
